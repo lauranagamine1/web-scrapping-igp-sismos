@@ -21,7 +21,7 @@ def lambda_handler(event, context):
 
     # Guardar los datos en DynamoDB
     dynamodb = boto3.resource('dynamodb')
-    table = dynamodb.Table('TablaWebScrappingPropuesto')
+    table = dynamodb.Table('TablaWebScrapping')
 
     # Eliminar todos los elementos actuales
     scan = table.scan()
